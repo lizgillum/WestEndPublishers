@@ -53,6 +53,48 @@ header button {
     border-radius: 8px;
   }
 
+/* authors */
+
+.authors {
+    display: grid;
+    grid: auto-flow min-content / repeat(12, 1fr);
+    grid-gap: 1em;
+    background-color: #B4DADC;
+}
+
+.colorfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.authors > h2 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    margin-left: 1rem;
+}
+
+.authors > p {
+    grid-column-start: 7;
+    grid-column-end: 12;
+    font-size: medium;
+    align-self: center;
+    padding-left: 1rem;
+}
+
+.writers {
+    grid-column-start: 1;
+    grid-column-end: 13;
+    margin-left: 4rem;
+}
+
+.names {
+    grid-column-start: 1;
+    grid-column-end: 13;
+    margin-top: 0;
+    margin-bottom: 1rem;
+} 
+
 /* grid */
 
 .row {
@@ -79,7 +121,6 @@ header button {
 footer {
     background-color: #B4DADC;
     font-size: 1.2rem;
-    
 }
 
 footer h3, h4 {
