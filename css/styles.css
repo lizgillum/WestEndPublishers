@@ -60,40 +60,52 @@ header button {
     grid: auto-flow min-content / repeat(12, 1fr);
     grid-gap: 1em;
     background-color: #B4DADC;
-}
-
-.colorfix::after {
-    content: "";
-    display: table;
-    clear: both;
+    padding-bottom: 2rem;
+    padding-right: 2rem;
 }
 
 .authors > h2 {
     grid-column-start: 1;
     grid-column-end: 5;
     margin-left: 1rem;
+    grid-row-start: 1;
+    grid-row-end: 2;
 }
 
-.authors > p {
-    grid-column-start: 7;
-    grid-column-end: 12;
+.desc {
+    grid-column-start: 8;
+    grid-column-end: 13;
     font-size: medium;
     align-self: center;
     padding-left: 1rem;
+    grid-row-start: 1;
+    grid-row-end: 2;
 }
 
 .writers {
+    grid-row-start: 2;
     grid-column-start: 1;
     grid-column-end: 13;
-    margin-left: 4rem;
+    display: grid;
+    grid: auto-flow min-content / repeat(12, 1fr); 
+}
+
+.card {
+    grid-column-start: 6;
+    grid-column-end: 8; 
+    margin-left: 1rem;
+    text-align: center;
+    width: 350px;
+}
+
+.card > img {
+    width: 350px;
+    height: 350px;
 }
 
 .names {
-    grid-column-start: 1;
-    grid-column-end: 13;
-    margin-top: 0;
-    margin-bottom: 1rem;
-} 
+    display: block;
+}
 
 /* grid */
 
@@ -190,6 +202,25 @@ header h2 {
     padding-top: 2rem;
 }
 
+.desc {
+    grid-column-start: 9;
+    grid-column-end: 13;
+}
+
+#jane, #maria, #kasey {
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+#bob, #ameria, #john {
+    grid-column-start: 6;
+    grid-column-end: 13;
+}
+
+#ameria {
+    grid-row-start: 2;
+}
+
 .first {
     grid-column-start: 1;
     grid-column-end: 7;
@@ -224,6 +255,31 @@ header h1 {
 
 header h2 {
     padding-top: 5rem;
+}
+
+.authors {
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+.desc {
+    grid-column-start: 10;
+    grid-column-end: 13;
+}
+
+#jane, #kasey {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#bob, #ameria {
+    grid-column-start: 5;
+    grid-column-end: 9;
+}
+
+#maria, #john {
+    grid-column-start: 10;
+    grid-column-end: 13;
 }
 
 .first {
