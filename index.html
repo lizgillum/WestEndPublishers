@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+    <link type="text/css" rel="stylesheet" href="css/styles.css">
     <title>West End Publishers | Home</title>
 </head>
 <body> 
   <header class="colorfix">
-    <div class="row limited"> 
-      <section class="column small-12">
+    <div class="limited"> 
+      <section class="small-12">
         <h1>WEST END PUBLISHERS</h1>
       </section>
     </div>
@@ -23,36 +23,71 @@
     <article>
       <section class="newReleases">
         <h2>New Releases!</h2>
+        <div class="new">
+          <div class="release" id="book1">
+            <img id="release1" src="img/newReleases/book1.png">
+            <h5>Every Summer After</h5>
+            <p>by Carley Fortune</p>
+          </div>
+          <div class="release" id="book2">
+            <img id="release2" src="img/newReleases/book2.png">
+            <h5>The Last Thing He Told Me</h5>
+            <p>by Laura Dave</p>
+          </div>
+          <div class="release book" id="book3">
+            <img id="release3" src="img/newReleases/book3.png">
+            <h5>Under the Bayou Moon</h5>
+            <p>by Valeria Fraser Luesse</p>
+          </div>
+          <div class="release book" id="book4">
+            <img src="img/newReleases/book4.png">
+            <h5>Under the Magnoilias</h5>
+            <p>by T.I. Lowe</p>
+          </div>
+          <div class="release book" id="book5">
+            <img src="img/newReleases/book5.png">
+            <h5>Maybe in Another Life</h5>
+            <p>by Taylor Jenkins Reid</p>
+          </div>
+        </div>
+        </div>
       </section>
-      <section class="column small-12 colorfix authors">
+      <section class="small-12 colorfix authors">
         <h2>Meet Our Authors</h2>
         <p class="desc">The people behind the stories!</p>
         <div class="writers">
-          <figure class="card" id="jane">
+          <figure class="wr-name" id="jane">
             <img src="img/authors/jane.png" alt="Jane Doe">
             <figcaption class="names">Jane Doe</figcaption>
           </figure>
-          <figure class="card" id="bob">
+          <figure class="wr-name" id="bob">
             <img src="img/authors/bob.png" alt="Bob Alice">
             <figcaption class="names">Bob Alice</figcaption>
           </figure>
-          <figure class="card" id="maria">
+          <figure class="wr-name" id="maria">
             <img src="img/authors/maria.png" alt="Maria Smith">
             <figcaption class="names">Maria Smith</figcaption>
           </figure>
-          <figure class="card" id="kasey">
+          <figure class="wr-name" id="kasey">
             <img src="img/authors/kasey.png" alt="Kasey Boggs">
             <figcaption class="names">Kasey Boggs</figcaption>
           </figure>
-          <figure class="card" id="ameria">
+          <figure class="wr-name" id="ameria">
             <img src="img/authors/ameria.png" alt="Ameria Sims">
             <figcaption class="names">Ameria Sims</figcaption>
           </figure>
-          <figure class="card" id="john">
+          <figure class="wr-name" id="john">
             <img src="img/authors/john.png" alt="John Moore">
             <figcaption class="names">John Moore</figcaption>
           </figure>
         </div>
+      </section>
+      <section class="recommended">
+        <h2>Trending Now</h2>
+      </section>
+      <section class="contact">
+        <h2>What updates on the hottest books?</h2>
+        <p>Sign up for our newsletter today!</p>
       </section>
       <section class="column small-12 events">
         <h2>Upcoming Events</h2>
@@ -78,11 +113,11 @@
       </article>
   </main>
   <footer class="colorfix">
-    <div class="row limited">
-      <section class="column title">
+    <div class="limited">
+      <section class="title">
         <h3>WEST END PUBLISHERS</h3>
       </section>
-      <section class="column first">
+      <section class="first">
         <h4>CORPERATE</h4>
           <ul>
             <li>123 Main Street, Lexington, KY 40502</li>
@@ -90,7 +125,7 @@
             <li>E: info@westend.org</li>
           </ul>
       </section>
-      <section class="column second">
+      <section class="second">
         <h4>CONTACT US</h4>
           <ul>
             <li>Customer Service</li>
@@ -98,7 +133,7 @@
             <li>Contact an Editor</li>
           </ul>
       </section>
-      <section class="column third">
+      <section class="third">
         <h4>FOR AUTHORS</h4>
           <ul>
             <li>Submit a Manuscript</li>
@@ -106,7 +141,7 @@
             <li>Agent Portal</li>
           </ul>
       </section>
-      <section class="column fourth">
+      <section class="fourth">
         <h4>SOCIAL</h4>
           <ul>
             <li>Facebook</li>
@@ -115,6 +150,7 @@
           </ul>
       </section>
     </div>
-  </footer>  
+  </footer> 
+  <script type="text/javascript" src="/script.js"></script>
 </body>
 </html>

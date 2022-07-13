@@ -22,6 +22,7 @@ header h1 {
     grid-column-start: 1;
     grid-column-end: 13;
     justify-self: center;
+    margin-bottom: .5rem;
 }
 
 .header-image {
@@ -57,6 +58,54 @@ header button {
 
 .newReleases {
     text-align: center;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+}
+
+.release {
+    margin-bottom: 1rem;
+}
+
+.release > img {
+    width: 172px;
+    height: 259px;
+}
+
+.release > h5 {
+    font-size: medium;
+    margin-top: 0;
+}
+
+.release > p {
+    font-size: smaller;
+    position: relative;
+    top: -20px;
+}
+
+.new {
+    display: grid;
+    grid: auto-flow min-content / repeat(12, 1fr);
+    grid-gap: .1em;
+}
+
+#book1 {
+    grid-column-start: 1;
+}
+
+#book2 {
+    grid-column-start: 5;
+}
+
+#book3 {
+    grid-column-start: 9;
+}
+   
+#book4 {
+    display: none;
+}
+    
+#book5 {
+    display: none;
 }
 /* authors */
 
@@ -75,6 +124,7 @@ header button {
     margin-left: 1rem;
     grid-row-start: 1;
     grid-row-end: 2;
+    margin-top: 1rem;
 }
 
 .desc {
@@ -85,25 +135,26 @@ header button {
     padding-left: 1rem;
     grid-row-start: 1;
     grid-row-end: 2;
+    margin-top: 1rem;
 }
 
 .writers {
     grid-row-start: 2;
-    grid-column-start: 1;
-    grid-column-end: 13;
-    display: grid;
-    grid: auto-flow min-content / repeat(12, 1fr); 
+    grid-column-start: 2;
+    grid-column-end: 6;
+    /* display: grid;
+    grid: auto-flow min-content / repeat(12, 1fr); */
 }
 
-.card {
-    grid-column-start: 6;
+.wr-name {
+   /* grid-column-start: 6;
     grid-column-end: 8; 
-    margin-left: 1rem;
+    margin-left: 1rem; */
     text-align: center;
     width: 350px;
 }
 
-.card > img {
+.wr-name > img {
     width: 350px;
     height: 350px;
 }
@@ -112,17 +163,20 @@ header button {
     display: block;
 }
 
-/* grid */
+/* trending */
 
-.row {
-    clear: both;
+.recommended > h2 {
+    text-align: center;
+    margin-top: 1rem;
 }
 
-.column {
-    float: left;
-    padding: 0 2vw;
-    margin: .75;
+/* updates */
+
+.contact > h2, p {
+text-align: center;
 }
+
+/* title */
 
 .small-12 {
     width: 100%;
@@ -197,7 +251,7 @@ footer li {
     font-size: 14px;
 }
 
-footer div {
+footer > div {
     margin: 1em;
     display: grid;
     grid: auto-flow min-content / repeat(12, 1fr);
@@ -209,6 +263,7 @@ footer div {
     grid-column-start: 1;
     grid-column-end: 13;
     justify-self: center;
+    text-align: center;
 }
 
 .first {
@@ -233,7 +288,7 @@ footer div {
 
 /* medium screen */
 
-@media only screen and (min-width: 786px) {
+@media only screen and (min-width: 768px) {
 header h1 {
         font-size: 1.7rem;
     }
@@ -246,9 +301,37 @@ header h2 {
     padding-top: 2rem;
 }
 
+#book1 {
+    grid-column-start: 2;
+}
+
+#book2 {
+    grid-column-start: 5;
+}
+
+#book3 {
+    grid-column-start: 8;
+}
+
+#book4 {
+    display: block;
+    grid-column-start: 11;
+}
+
 .desc {
     grid-column-start: 9;
     grid-column-end: 13;
+}
+
+.writers {
+    grid-column-start: 1;
+    grid-column-end: 13;
+    display: grid;
+    grid: auto-flow min-content / repeat(12, 1fr); 
+}
+
+.wr-name {
+    margin-left: 1rem; 
 }
 
 #jane, #maria, #kasey {
@@ -326,7 +409,7 @@ header h2 {
 
 /* large screen */
 
-@media only screen and (min-width: 1040px) {
+@media only screen and (min-width: 1200px) {
 header h1 {
         font-size: 1.9rem;
     }
@@ -337,6 +420,32 @@ header h1 {
 
 header h2 {
     padding-top: 5rem;
+}
+
+.new {
+    display: grid;
+    grid: auto-flow min-content / repeat(13, 1fr);
+}
+
+#book1 {
+    grid-column-start: 3;
+}
+
+#book2 {
+    grid-column-start: 5;
+}
+
+#book3 {
+    grid-column-start: 7;
+}
+
+#book4 {
+    grid-column-start: 9;
+}
+
+#book5 {
+    display: block;
+    grid-column-start: 11;
 }
 
 .authors {
