@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="css/styles.css">
+    <title>West End Publishers | Newsletter</title>
+</head>
+<body>
+    <header class="colorfix">
+        <div class="limited"> 
+          <section class="small-12">
+            <h1>WEST END PUBLISHERS</h1>
+          </section>
+        </div>
+      </header>
+      <main>
+        <h2 id="fp">Sign Up for Our Newsletter!</h2>
+        <form action="results.html" method="GET"></form>
+        <div class="input-group">
+            <div><label for="first-name">First Name</label></div>
+            <div><input type="text" name="first-name" id="first-name" required placeholder="John Doe"></div>
+        </div>
+        <div class="input-group">
+            <div><label for="email">Email Adress</label></div>
+            <div><input type="text" name="email" id="email" required placeholder="example@gmail.com" onBlur="filter=/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9])+$/;
+                if(!filter.test(this.value)) {alert('Please enter a valid email address.');Form.EmailAddress.focus();}"></div>
+        </div>
+        <input class="button" type="submit" id="submit" value="Sign Up!">
+      </main>
+      <footer class="colorfix">
+        <div class="limited">
+          <section class="title">
+            <h3>WEST END PUBLISHERS</h3>
+          </section>
+          <section class="first">
+            <h4>CORPERATE</h4>
+              <ul>
+                <li>123 Main Street, Lexington, KY 40502</li>
+                <li>P: (800) 866-000</li>
+                <li>E: info@westend.org</li>
+              </ul>
+          </section>
+          <section class="second">
+            <h4>CONTACT US</h4>
+              <ul>
+                <li>Customer Service</li>
+                <li>Ebook Publishing</li>
+                <li>Contact an Editor</li>
+              </ul>
+          </section>
+          <section class="third">
+            <h4>FOR AUTHORS</h4>
+              <ul>
+                <li>Submit a Manuscript</li>
+                <li>Report Piracy</li>
+                <li>Agent Portal</li>
+              </ul>
+          </section>
+          <section class="fourth">
+            <h4>SOCIAL</h4>
+              <ul>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+              </ul>
+          </section>
+        </div>
+      </footer> 
+
+      <script src="script.js"></script>
+</body>
