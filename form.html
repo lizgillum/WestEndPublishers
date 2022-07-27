@@ -17,17 +17,17 @@
       </header>
       <main>
         <h2 id="fp">Sign Up for Our Newsletter!</h2>
-        <form action="results.html" method="GET"></form>
-        <div class="input-group">
-            <div><label for="first-name">First Name</label></div>
-            <div><input type="text" name="first-name" id="first-name" required placeholder="John Doe"></div>
-        </div>
-        <div class="input-group">
-            <div><label for="email">Email Adress</label></div>
-            <div><input type="text" name="email" id="email" required placeholder="example@gmail.com" onBlur="filter=/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9])+$/;
-                if(!filter.test(this.value)) {alert('Please enter a valid email address.');Form.EmailAddress.focus();}"></div>
-        </div>
-        <input class="button" type="submit" id="submit" value="Sign Up!">
+        <form name="myForm" id="myForm" action="" method="GET">
+          <div class="input-group fn">
+              <div><label for="firstName">First Name</label></div>
+              <div><input type="text" name="firstName" id="firstName" required placeholder="John Doe"></div>
+          </div>
+          <div class="input-group mail">
+              <div><label for="email">Email Adress</label></div>
+              <div><input type="text" name="email" id="email" required placeholder="example@gmail.com"></div>
+          </div>
+          <input class="button" type="submit" id="submit" value="Sign Up!">
+        </form>
       </main>
       <footer class="colorfix">
         <div class="limited">
@@ -69,5 +69,5 @@
         </div>
       </footer> 
 
-      <script src="script.js"></script>
+      <script src="results.js"></script>
 </body>

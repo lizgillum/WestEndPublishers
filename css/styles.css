@@ -251,7 +251,7 @@ text-align: center;
     margin-top: 1rem;
 }
 
-.contact > button {
+.contact > a {
     width: 150px;
     grid-column-start: 1;
     grid-column-end: 13;
@@ -393,10 +393,36 @@ footer > div {
 .input-group {
     padding: 10px;
     width: 100%;
-}
+} 
 
 label {
     font-weight: 500;
+}
+
+#myForm {
+    display: grid;
+    grid: auto-flow min-content / repeat(12, 1fr); 
+}
+
+.fn, .mail {
+    grid-column-start: 6;
+    grid-column-end: 8;
+    justify-self: center;
+}
+
+.fn {
+    grid-row-start: 1;
+}
+
+.mail {
+    grid-row-start: 2;
+}
+
+#submit {
+    grid-row-start: 3;
+    grid-column-start: 6;
+    grid-column-end: 8;
+    justify-self: center;
 }
 
 /* medium screen */
