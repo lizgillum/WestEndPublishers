@@ -6,10 +6,10 @@ function validate() {
     if (email == "" || !regEmail.test(email)) {
         alert("Please enter a valid e-mail address.");
         email.focus();
-        return false;
+        return;
     }
 
-    return true;
+    display()
 } 
 
 function display() {
@@ -19,5 +19,3 @@ function display() {
 };
 
 document.getElementById("myForm").onsubmit = function() {validate()};
-
-document.getElementById("myForm").onsubmit = function() {display()};

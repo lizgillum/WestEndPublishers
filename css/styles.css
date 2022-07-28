@@ -43,8 +43,8 @@ header h1 {
 
 .hero > div {
     grid-row-start: 2;
-    grid-column-start: 4;
-    grid-column-end: 10;
+    grid-column-start: 2;
+    grid-column-end: 12;
     justify-content: flex-start;
     display: grid;
     grid: auto-flow min-content / repeat(12, 1fr);
@@ -53,12 +53,10 @@ header h1 {
 header h2 {
     text-align: center;
     color: white;
-    font-size: xx-large;
+    font-size: x-large;
     grid-row-start: 1;
     grid-column-start: 1;
-    grid-row-end: 2;
     grid-column-end: 13;
-    justify-self: flex-start;
 }
 
 .hero > div > .button {
@@ -88,7 +86,6 @@ header h2 {
 .newReleases {
     text-align: center;
     margin-top: 1rem;
-    margin-bottom: .5rem;
 }
 
 .release {
@@ -96,8 +93,8 @@ header h2 {
 }
 
 .release > img {
-    width: 172px;
-    height: 259px;
+    width: 160px;
+    height: 243px;
 }
 
 .release > h5 {
@@ -118,15 +115,15 @@ header h2 {
 }
 
 #book1 {
-    grid-column-start: 1;
+    grid-column-start: 4;
 }
 
 #book2 {
-    grid-column-start: 5;
+    grid-column-start: 8;
 }
 
 #book3 {
-    grid-column-start: 9;
+    display: none;
 }
    
 #book4 {
@@ -136,6 +133,7 @@ header h2 {
 #book5 {
     display: none;
 }
+
 /* authors */
 
 .authors {
@@ -169,8 +167,9 @@ header h2 {
 
 .writers {
     grid-row-start: 2;
-    grid-column-start: 2;
+    grid-column-start: 1;
     grid-column-end: 6;
+    justify-content: flex-start;
 }
 
 .wr-name {
@@ -179,12 +178,16 @@ header h2 {
 }
 
 .wr-name > img {
-    width: 350px;
-    height: 350px;
+    width: 200px;
+    height: 200px;
 }
 
 .names {
     display: block;
+}
+
+#kasey, #ameria, #john {
+    display: none;
 }
 
 /* trending */
@@ -466,9 +469,20 @@ header h1 {
 }
 
 header h2 {
-    padding-top: 2rem;
+    margin: 0;
+    padding-bottom: .5rem;
     justify-self: center;
 }
+
+.hero > div > .button {
+    grid-column-start: 5;
+    grid-column-end: 9;
+}
+
+.release > img {
+    width: 172px;
+    height: 259px;
+} 
 
 #book1 {
     grid-column-start: 2;
@@ -479,6 +493,7 @@ header h2 {
 }
 
 #book3 {
+    display: block;
     grid-column-start: 8;
 }
 
@@ -492,6 +507,11 @@ header h2 {
     grid-column-end: 13;
 }
 
+.wr-name > img {
+    width: 350px;
+    height: 350px;
+}
+
 .writers {
     grid-column-start: 1;
     grid-column-end: 13;
@@ -501,6 +521,10 @@ header h2 {
 
 .wr-name {
     margin-left: 1rem; 
+}
+
+#kasey, #ameria, #john {
+    display: block;
 }
 
 #jane, #maria, #kasey {
