@@ -25,19 +25,48 @@ header h1 {
     margin-bottom: .5rem;
 }
 
+.hero {
+    display: grid;
+    grid: auto-flow min-content / repeat(12, 1fr);
+} 
+
 .header-image {
-    background-image: url("/img/header.webp");
     background-position: center;
     background-repeat: no-repeat;
     height: 40vw;
-    text-align: center;
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 1;
+    grid-row-end: 4; 
+}
+
+.hero > div {
+    grid-row-start: 2;
+    grid-column-start: 4;
+    grid-column-end: 10;
+    justify-content: flex-start;
+    display: grid;
+    grid: auto-flow min-content / repeat(12, 1fr);
 }
 
 header h2 {
     text-align: center;
-    padding-top: 3rem;
     color: white;
     font-size: xx-large;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 2;
+    grid-column-end: 13;
+    justify-self: flex-start;
+}
+
+.hero > div > .button {
+    grid-row-start: 2;
+    grid-column-start: 4;
+    grid-column-end: 10;
+    justify-content: center;
+    align-content: flex-start;
 }
 
 .button {
@@ -438,6 +467,7 @@ header h1 {
 
 header h2 {
     padding-top: 2rem;
+    justify-self: center;
 }
 
 #book1 {
